@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.header .container {
+    display: block;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+}
+
+.logo img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.logo-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.nav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #4A90E2;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: block;
+    position: relative;
+}
+
+.hero-text {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-image {
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pricing Banner */
+.pricing-banner {
+    background: #2C3E50;
+    color: white;
+    padding: 30px 0;
+}
+
+.banner-content {
+    display: block;
+    position: relative;
+}
+
+.banner-text {
+    width: 60%;
+    display: inline-block;
+}
+
+.banner-text h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.banner-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-primary {
+    background: #4A90E2;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: #357ABD;
+}
+
+/* Services Section */
+.services-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.highlight {
+    color: #4A90E2;
+}
+
+.services-grid {
+    display: block;
+    text-align: center;
+}
+
+.service-item {
+    width: 30%;
+    display: inline-block;
+    margin: 0 1.5%;
+    text-align: center;
+    position: relative;
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing-section {
+    background: #F8F9FA;
+    padding: 80px 0;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.pricing-cards {
+    display: block;
+    text-align: center;
+}
+
+.pricing-card {
+    width: 22%;
+    display: inline-block;
+    margin: 0 1.5%;
+    background: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-body p {
+    margin: 15px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Comparison Section */
+.comparison-section {
+    background: #4A90E2;
+    color: white;
+    padding: 40px 0 80px 0;
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comparison-nav {
+    text-align: center;
+}
+
+.comparison-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.comparison-nav a:hover {
+    text-decoration: underline;
+}
+
+.comparison-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.plan-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.plan-header p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.plan-header h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+th {
+    background: #F8F9FA;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th:first-child {
+    background: white;
+}
+
+td {
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+    background: #F8F9FA;
+}
+
+.check {
+    color: #4A90E2;
+    font-size: 20px;
+}
+
+/* Final Banner */
+.final-banner {
+    background: #4A90E2;
+    color: white;
+    padding: 50px 0;
+}
+
+/* Footer */
+.footer {
+    background: white;
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-logo img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.footer-logo .logo-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.footer-logo .logo-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.footer-logo .logo-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-bottom a {
+    color: #4A90E2;
+    text-decoration: none;
+}
